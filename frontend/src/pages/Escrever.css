@@ -15,14 +15,34 @@
 }
 
 .txtb textarea {
-  width: 90%;
-  max-width: 500px;
+  width: 90%;           /* ocupa 90% da largura do container */
+  max-width: 500px;     /* limite máximo em telas maiores */
   height: 150px;
   font-size: 16px;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid gray;
   resize: none;
+  box-sizing: border-box; /* importante para o padding não aumentar o tamanho total */
+  display: block;          /* evita espaçamento estranho */
+  margin: 0 auto;          /* centraliza no container */
+  transition: all 0.3s ease;
+}
+
+.txtb textarea:focus,
+.txtb textarea:hover {
+  border-color: #fd60c8;
+  box-shadow: 0 0 10px #fd60c8;
+  transform: scale(1.05);
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 480px) {
+  .txtb textarea {
+    width: 95%;
+    font-size: 14px;
+    height: 120px;
+  }
 }
 
 .btnenv button {
