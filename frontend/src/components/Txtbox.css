@@ -22,14 +22,9 @@
   border-color: #fd60c8;
   transition: all 0.4s ease;
 }
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .txtbox {
     width: 95%;
     padding-top: 15px;
-  }
-
-  #mensagem {
-    font-size: 14px;
   }
 }
