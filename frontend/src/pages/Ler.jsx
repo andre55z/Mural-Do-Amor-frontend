@@ -40,10 +40,8 @@ function Ler(){
     return(
         <>
             <div className="Mensages">
-                <div className="logo">
-                    <Logo/>
-                </div>
-                { vazio && <Nomsg/>}
+
+                { vazio ? <Nomsg/> : <h1>Mensagens:</h1>}
                 {usuarios.map((usuario)=>(
                     <div className="mainmsg">
                         <div className="msgbox" key={usuario.id}>

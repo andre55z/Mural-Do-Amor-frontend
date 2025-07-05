@@ -4,12 +4,16 @@ import Lstbox from "../components/Lstbox";
 import Txtbox from "../components/Txtbox";
 import Enviar from "../components/Enviar";
 import './Escrever.css'
+import Logo from "../components/Logo";
 
 function Escrever(){
     const [mensagem, setMensagem] = useState('');
     const [pessoa, setPessoa] = useState('André');
     return(
         <>
+            <div className="logo">
+                <Logo/>
+            </div>
             <h2>Quem é você?</h2>
             <div className='lstb'>
                 <Lstbox pessoa={pessoa} setPessoa={setPessoa}/>
