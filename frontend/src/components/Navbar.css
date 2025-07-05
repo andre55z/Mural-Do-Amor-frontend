@@ -1,35 +1,32 @@
-.btns{
-    display: flex;
-    gap: 60px;
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
 }
 
-.btns #btnesc, #btnler{
-    background-color: #fd60c8;
-    font-family: 'Marko One', serif;
-    width: 220px;
-    height: 70px;
-    border-radius: 20px;
-    font-size: 22px;
-    color: white;
+.btns #btnesc,
+.btns #btnler {
+  background-color: #fd60c8;
+  font-family: 'Marko One', serif;
+  width: 90%;
+  max-width: 220px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+  border: none;
 }
 
-#btnesc:focus{
-    background-color: #ffc8ec;
-    box-shadow: 0 0 10px #fd60c8;
+#btnesc:focus,
+#btnler:focus {
+  background-color: #ffc8ec;
+  box-shadow: 0 0 10px #fd60c8;
 }
 
-#btnesc:hover{
-    background-color: #ffc8ec;
-    transition: all 0.4s ease;
-}
-
-#btnler:focus{
-    background-color: #ffc8ec;
-    box-shadow: 0 0 10px #fd60c8;
-
-}
-
-#btnler:hover{
-    background-color: #ffc8ec;
-    transition: all 0.4s ease;
+#btnesc:hover,
+#btnler:hover {
+  background-color: #ffc8ec;
+  transition: all 0.3s ease;
 }
