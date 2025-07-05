@@ -1,25 +1,41 @@
-.txtbox{
-    padding-top: 20px;
-
+/* Container do input/textarea */
+.txtbox {
+  padding-top: 20px;
+  width: 90%;           /* ocupar 90% da largura da tela */
+  max-width: 600px;     /* limite máximo para desktop */
+  margin: 0 auto;       /* centraliza horizontalmente */
+  box-sizing: border-box; /* para incluir padding na largura */
 }
 
-#mensagem{
-    font-family: 'Marko One', serif;
-    border-radius: 10px;
-    background-color: #d9d9d9;
-}
-
-#mensagem:focus {
-  box-shadow: 0 0 10px #fd60c8;
-  transform: scale(1.05); 
-  border-color: #fd60c8;
+/* Estilo do input/textarea */
+#mensagem {
+  font-family: 'Marko One', serif;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  width: 100%;         /* ocupar toda a largura do container .txtbox */
+  padding: 10px;       /* padding interno para ficar confortável */
+  border: 2px solid transparent;
   transition: all 0.4s ease;
+  box-sizing: border-box;
+  font-size: 16px;     /* aumentar a fonte para facilitar leitura no celular */
+  resize: vertical;    /* permite redimensionar verticalmente, opcional */
 }
 
+/* Foco e hover para destacar */
+#mensagem:focus,
 #mensagem:hover {
   box-shadow: 0 0 10px #fd60c8;
-  transform: scale(1.05); 
+  transform: scale(1.05);
   border-color: #fd60c8;
-  transition: all 0.4s ease;
 }
 
+@media (max-width: 480px) {
+  .txtbox {
+    width: 95%;
+    padding-top: 15px;
+  }
+
+  #mensagem {
+    font-size: 14px;
+  }
+}
