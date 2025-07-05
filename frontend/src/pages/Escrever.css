@@ -1,6 +1,37 @@
-.lstb, .txtb, .btnenv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.lstb, .txtb, .btnenv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
 }
 
+.lstb select {
+  width: 90%;
+  max-width: 300px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.txtb textarea {
+  width: 90%;
+  max-width: 500px;
+  height: 150px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  resize: none;
+}
+
+.btnenv button {
+  width: 90%;
+  max-width: 300px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #8c3adf;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
