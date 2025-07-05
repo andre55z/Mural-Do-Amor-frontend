@@ -13,7 +13,7 @@ function Ler(){
     const [vazio, setVazio] = useState(null);
     const [popup, setPopup] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:3000/lermensagem')
+        fetch('mural-do-amor-backend-production.up.railway.app/lermensagem')
             .then(response => response.json())
             .then(data => {
                 if (data.usuarios && data.usuarios.length > 0) {

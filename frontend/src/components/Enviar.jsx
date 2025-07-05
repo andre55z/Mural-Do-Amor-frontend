@@ -7,7 +7,7 @@ function Enviar({mensagem, setMensagem, pessoa, setPessoa}){
     const [sucesso, setSucesso] = useState(false);
     const [Nsucesso, setNSucesso] = useState(true);
     function enviarMensagem(){
-        fetch('http://localhost:3000/mensagem', {
+        fetch('mural-do-amor-backend-production.up.railway.app/mensagem', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'

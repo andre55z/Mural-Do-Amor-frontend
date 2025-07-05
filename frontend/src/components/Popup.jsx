@@ -9,7 +9,7 @@ function Popup({popup, setPopup, idUsuario}){
 
     function excluirBd(idUsuario){
         const id = idUsuario;
-        fetch('http://localhost:3000/excluir',{
+        fetch('mural-do-amor-backend-production.up.railway.app/excluir',{
             method:"POST",
             headers:{
                 'Content-Type': 'application/json'
