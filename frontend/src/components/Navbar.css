@@ -1,0 +1,35 @@
+.btns{
+    display: flex;
+    gap: 60px;
+}
+
+.btns #btnesc, #btnler{
+    background-color: #fd60c8;
+    font-family: 'Marko One', serif;
+    width: 220px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 22px;
+    color: white;
+}
+
+#btnesc:focus{
+    background-color: #ffc8ec;
+    box-shadow: 0 0 10px #fd60c8;
+}
+
+#btnesc:hover{
+    background-color: #ffc8ec;
+    transition: all 0.4s ease;
+}
+
+#btnler:focus{
+    background-color: #ffc8ec;
+    box-shadow: 0 0 10px #fd60c8;
+
+}
+
+#btnler:hover{
+    background-color: #ffc8ec;
+    transition: all 0.4s ease;
+}

@@ -1,0 +1,46 @@
+.Popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 101, 101);
+    border: 3px solid rgb(255, 0, 0);
+    font-family: 'Marko One', serif;
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+}
+
+#btnspopup, #cancelar, #excluir{
+    gap: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    font-family: 'Marko One', serif;
+    font-size: 12px;
+}
+
+#excluir, #cancelar{
+    width: 90px;
+    height: 30px;
+
+}
+#excluir{
+    background-color: red;
+}
+
+#cancelar{
+    background-color: blueviolet;
+}
+
+#cancelar:hover{
+    background-color: rgb(162, 102, 218);
+    transition: all 0.5s ease;
+}
+
+#excluir:hover{
+    background-color: rgb(253, 56, 56);
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,22 @@
+.enviar{
+    padding-top: 20px;
+
+}
+
+.SucMnsg{
+    padding-top: 15px;
+}
+
+#btnenv{
+    border-radius: 10px;
+    background-color: #9d00d2;
+    width: 220px;
+    height:70px;
+    font-family: 'Marko One', serif;
+    font-size: 20px;
+}
+
+#btnenv:focus{
+    background-color: #ffc8ec;
+    box-shadow: 0 0 10px #fd60c8;
+}

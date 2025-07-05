@@ -1,0 +1,6 @@
+.lstb, .txtb, .btnenv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
