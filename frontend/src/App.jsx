@@ -12,7 +12,7 @@ function App() {
   const [mensagem, setMensagem] = useState('');
   const [id, setId] = useState('');
   useEffect(() => {
-    fetch('mural-do-amor-backend-production.up.railway.app')
+    fetch('https://mural-do-amor-backend-production.up.railway.app')
       .then(response => response.json())   //captando resposta do http
       .then(data => {                      //data tem o json mandado pelo backend 
         setMensagem(data.mensagem);

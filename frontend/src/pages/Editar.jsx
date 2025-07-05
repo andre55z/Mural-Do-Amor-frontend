@@ -12,7 +12,7 @@ function Editar(){
     const [id, setId] = useState(usuario.id)
     const [sucesso, setSucesso] = useState(false);
     function salvar(){
-        fetch('mural-do-amor-backend-production.up.railway.app/update',{
+        fetch('https://mural-do-amor-backend-production.up.railway.app/update',{
             method: "POST",
             headers:{
                 'Content-Type': 'application/json'
