@@ -5,6 +5,7 @@ function Popup({popup, setPopup, idUsuario}){
 
     function cancela(){
         setPopup(null);
+        console.log('');
     }
 
     function excluirBd(idUsuario){
