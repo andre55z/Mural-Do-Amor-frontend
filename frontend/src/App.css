@@ -1,12 +1,15 @@
 .header {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  
+
+  /* Garantir que não estoure em telas pequenas */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-h2{
+h2 {
   font-family: 'Marko One', serif;
   font-weight: 100;
   display: flex;
@@ -14,5 +17,8 @@ h2{
   align-items: center;
   font-size: 19px;
   padding-top: 30px;
+  margin: 0;
+  text-align: center; 
+  max-width: 100%;
+  word-wrap: break-word;
 }
-
